@@ -1,0 +1,73 @@
+{
+    "manifestVersion": 1,
+    "id": "AzureDevOpsApplicationGatewayScaleTaskExtension",
+    "name": "Azure Application Gateway Instance Scaler",
+    "version": "1.0.14",
+    "publisher": "williamoconnor",
+    "public": true,
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "Configure Azure Application Gateway as part of release task",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/extension-icon-square.png"
+    },
+    "tags": [
+        "releasemanagement",
+        "applicationgateway",
+        "az"
+    ],
+    "files": [
+        {
+            "path": "buildAndReleaseTask"
+        },
+        {
+            "path": "images/settings.png",
+            "addressable": "true"
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        }
+    },
+    "branding": {
+        "theme": "dark",
+        "color": "rgb(35, 35, 35)"
+    },
+    "screenshots": [
+        {
+            "path": "images/settings.png"
+        }
+    ],
+    "links": {
+        "license": {
+            "uri": "https://github.com/williamoconnorme/AzureDevOpsApplicationGatewayScaleTask/blob/master/license.txt"
+        },
+        "issues": {
+            "uri": "https://github.com/williamoconnorme/AzureDevOpsApplicationGatewayScaleTask/issues"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/williamoconnorme/AzureDevOpsApplicationGatewayScaleTask"
+    },
+
+    "contributions": [
+        {
+            "id": "me.williamoconnor.AzureDevOpsApplicationGatewayScaleTaskExtension",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildAndReleaseTask"
+            }
+        }
+    ]
+}
